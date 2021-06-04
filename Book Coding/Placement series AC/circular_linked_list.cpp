@@ -78,16 +78,16 @@ void deleteAtIndex(Node* &head, int indexy){
     //     delete todelete;
 
     // }else{
-        while(count< indexy){
+        while(count< indexy-1){
             temp = temp->next;
             count++;
             cout<<count<<endl;
         }
-        printList(temp);
-        // Node* todelete = temp;
-        // temp = temp->next;
+        // printList(temp);
+        Node* todelete = temp->next;
+        temp->next = temp->next->next;
 
-        // delete todelete;
+        delete todelete;
     // }
 }
 
