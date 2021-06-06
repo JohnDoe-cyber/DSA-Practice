@@ -13,13 +13,18 @@ int fibonacci_sum_naive(long long n) {
         previous = current;
         current = tmp_previous + current;
         sum += current;
+        // std :: cout << sum<< "\n";
+
     }
+    // std :: cout << sum<< "\n";
 
     return sum % 10;
 }
 
 int main() {
     long long n = 0;
-    std::cin >> n;
-    std::cout << fibonacci_sum_naive(n);
+    // std::cin >> n;
+    std::cout << fibonacci_sum_naive(239);
+    std::cout << fibonacci_sum_naive(100);
+    std::cout << fibonacci_sum_naive(3);
 }

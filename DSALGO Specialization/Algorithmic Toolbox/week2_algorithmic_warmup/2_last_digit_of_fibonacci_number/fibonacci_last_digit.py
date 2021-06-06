@@ -15,11 +15,14 @@ import sys
 
 
 def get_fibonacci_last_digit_naive(n):
+    if n==0 or n==1:
+        return n
     x = [0,1]
     for i in range(2, n+1):
-        x.append(x[-1]+x[-2])
-    if n==0:
-        return 0
+        x.append(x[-1]%10+x[-2]%10)
+    # print(x)
+    # print(x[-1]%10)
+    
     return x[-1]%10
 
 

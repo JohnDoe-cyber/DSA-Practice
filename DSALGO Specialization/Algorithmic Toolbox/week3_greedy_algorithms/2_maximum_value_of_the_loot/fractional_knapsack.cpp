@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 using std::vector;
 
@@ -7,6 +8,8 @@ double get_optimal_value(int capacity, vector<int> weights, vector<int> values) 
   double value = 0.0;
 
   // write your code here
+  
+
 
   return value;
 }
