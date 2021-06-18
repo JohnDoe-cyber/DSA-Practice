@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/dgk/anaconda3/envs/newmain/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "files.associations": {
         "any": "cpp",
         "array": "cpp",
